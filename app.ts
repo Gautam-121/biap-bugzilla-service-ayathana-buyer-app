@@ -10,6 +10,7 @@ const createServer = (): express.Application => {
   // Body parsing Middleware
   app.use(express.json())
   app.use(express.urlencoded({ extended: true }))
+  console.log("Enter")
 
   app.use(routes)
 
